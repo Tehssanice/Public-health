@@ -10,9 +10,9 @@ export default function PatientList({ patients, setSelectedPatient }) {
       {patients.length > 0 ? (
         <div>
           <ul>
-            {patients.map((patient) => (
+            {patients.map((patient, index) => (
               <li
-                key={patient.id}
+                key={index}
                 onClick={() => setSelectedPatient(patient)}
                 style={{ cursor: "pointer", marginBottom: "10px" }}
               >

@@ -6,7 +6,7 @@ export default function PatientInfo({ patient }) {
   }
 
   return (
-    <div>
+    <div className="patient-details">
       <h3>Patient Information</h3>
       <div className="patient-image">
         <img src={patient.profile_picture} alt={patient.name} />
