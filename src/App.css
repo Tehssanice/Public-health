@@ -36,3 +36,76 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-holder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px;
+  border: 1px solid #dcd7d7;
+  border-radius: 40px;
+  margin: 35px;
+  font-size: 12px;
+}
+
+.nav-holder .logo {
+  width: 10%;
+}
+
+.nav-holder .logo img {
+  width: 100%;
+}
+
+.nav-holder ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.nav-holder ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-holder ul li img {
+  width: 17%;
+}
+
+.nav-holder .profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 16%;
+}
+
+.patients {
+  display: flex;
+  justify-content: space-around;
+}
+
+.patients ul {
+  /* border: 1px solid rgb(205, 205, 205); */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px #e9dede;
+}
+
+.patient-image {
+  width: 20%;
+}
+
+.patient-image img {
+  width: 100%;
+}
+
+.patients ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  text-align: start;
+  border-bottom: 1px solid #e9dede;
+}
