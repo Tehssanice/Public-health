@@ -1,19 +1,6 @@
-import React, { useState } from "react";
-import useFetch from "./useFetch";
-import PatientInfo from "./PatientInfo";
+import React from "react";
 
-export default function PatientList() {
-  const patients = useFetch();
-  const [selectedPatient, setSelectedPatient] = useState(null);
-
-  // useEffect(() => {
-  //   if (patients.length > 0 && patients[3]) {
-  //     setSelectedPatient(patients[3]);
-  //   }
-  // }, [patients]);
-
-  // console.log(patients, "home");
-
+export default function PatientList({ patients, setSelectedPatient }) {
   return (
     <div>
       <h3>Patient List</h3>
@@ -44,9 +31,6 @@ export default function PatientList() {
               </li>
             ))}
           </ul>
-          <div style={{ flex: 2, paddingLeft: "20px" }}>
-            <PatientInfo patient={selectedPatient} />
-          </div>
         </div>
       ) : (
         <p>Loading patients...</p>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PatientInfo({ patient }) {
   if (!patient) {
-    return <p>No patient selected.</p>;
+    return <p>Select a patient to see their information</p>;
   }
 
   return (
@@ -13,7 +13,7 @@ export default function PatientInfo({ patient }) {
       </div>
       <div>
         <p>
-          <b>Name:</b> {patient.name}
+          <b>{patient.name}</b>
         </p>
         <p>
           <b>Age:</b> {patient.age}
