@@ -8,7 +8,7 @@ export default function LabResults({ patient }) {
   const results = patient.lab_results;
 
   return (
-    <div>
+    <div className="lab-results">
       <h3>Lab Results</h3>
       <table>
         <thead>

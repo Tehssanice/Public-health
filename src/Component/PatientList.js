@@ -5,11 +5,13 @@ export default function PatientList({ patients, setSelectedPatient }) {
     <div>
       <h3>Patient List</h3>
 
+      <hr />
+
       {/* Array of patients with their image, name and age*/}
 
       {patients.length > 0 ? (
         <div>
-          <ul>
+          <ul className="patients-list">
             {patients.map((patient, index) => (
               <li
                 key={index}
@@ -23,7 +25,7 @@ export default function PatientList({ patients, setSelectedPatient }) {
                   <span>
                     <b>{patient.name}</b>
                   </span>
-                  <br />
+                  {/* <br /> */}
                   <span>
                     <small>{patient.age} years old</small>
                   </span>

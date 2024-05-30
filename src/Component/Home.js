@@ -17,11 +17,11 @@ export default function Home() {
   }, [patients]);
 
   return (
-    <div className="patients">
-      <div className="patient-list">
+    <div className="container">
+      <div className="sidebar">
         <PatientList patients={patients} setSelectedPatient={setSelectedPatient} />
       </div>
-      <div className="diagnosis-history">
+      <div className="content">
         <DiagnosticHistory patient={selectedPatient} />
         <DiagnosticList patient={selectedPatient} />
       </div>

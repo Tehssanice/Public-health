@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Nav() {
   return (
-    <div className="nav-holder">
+    <div className="header nav">
       <div className="logo">
         <img src="images/TestLogo.svg" alt="Tech Care Logo" />
       </div>

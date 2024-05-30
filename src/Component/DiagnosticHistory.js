@@ -60,8 +60,13 @@ export default function DiagnosticHistory({ patient }) {
   }
 
   return (
-    <div>
-      <div id="bp-chart" style={{ height: "200px" }}>
+    <div className="diagnosis-history">
+      <div class="header">
+        <h2>Diagnosis History</h2>
+        <span class="time-frame">Last 6 months</span>
+      </div>
+
+      <div id="bp-chart" className="chart">
         <canvas ref={chartRef}></canvas>
       </div>
       {history && history.length > 3 && (

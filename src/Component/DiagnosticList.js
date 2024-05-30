@@ -8,7 +8,7 @@ export default function DiagnosticList({ patient }) {
   const diagnosis = patient.diagnostic_list;
 
   return (
-    <div>
+    <div className="diagnostic-list">
       <h3>Diagnostic List</h3>
 
       {diagnosis.length > 0 ? (

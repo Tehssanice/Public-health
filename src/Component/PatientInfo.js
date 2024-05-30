@@ -8,31 +8,38 @@ export default function PatientInfo({ patient }) {
   return (
     <div className="patient-details">
       <h3>Patient Information</h3>
-      <div className="patient-image">
+      <div className="profile-image">
         <img src={patient.profile_picture} alt={patient.name} />
       </div>
       <div>
-        <p>
-          <b>{patient.name}</b>
-        </p>
-        <p>
-          <b>Age:</b> {patient.age}
-        </p>
-        <p>
-          <b>Date of Birth:</b> {patient.date_of_birth}
-        </p>
-        <p>
-          <b>Gender:</b> {patient.gender}
-        </p>
-        <p>
-          <b>Phone Number:</b> {patient.phone_number}
-        </p>
-        <p>
-          <b>Emergency Contact:</b> {patient.emergency_contact}
-        </p>
-        <p>
-          <b>Insurance:</b> {patient.insurance_type}
-        </p>
+        <h3>{patient.name}</h3>
+
+        <div class="d-flex">
+          <img src="images/calender.png" alt="" />
+          <p id="patient-dob">Date Of Birth: {patient.date_of_birth}</p>
+        </div>
+
+        <div class="d-flex">
+          <img src="images/gender.png" alt="" />
+          <p id="patient-gender">Gender: {patient.gender}</p>
+        </div>
+
+        <div class="d-flex">
+          <img src="images/phone.png" alt="" />
+          <p id="patient-contact">Contact Info: {patient.phone_number}</p>
+        </div>
+
+        <div class="d-flex">
+          <img src="images/phone.png" alt="" />
+          <p id="patient-emergency">Emergency Contacts: {patient.emergency_contact}</p>
+        </div>
+
+        <div class="d-flex">
+          <img src="images/insurance.png" alt="" />
+          <p id="patient-insurance">Insurance Provider: {patient.insurance_type}</p>
+        </div>
+
+        <button>Show All Information</button>
       </div>
     </div>
   );
